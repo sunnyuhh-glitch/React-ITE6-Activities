@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Sunny Corpin",
+    "subject": "Application Development",
+    "grade": 95
+  },
+  {
+    "id": 2,
+    "name": "John Doe",
+    "subject": "Web Development",
+    "grade": 88
+  },
+  {
+    "id": 3,
+    "name": "Jane Smith",
+    "subject": "Networking",
+    "grade": 74
+  },
+   {
+    "id": 4,
+    "name": "Johnloyd Derio",
+    "subject": "App Dev",
+    "grade": 90
+  },
+   {
+    "id": 5,
+    "name": "Sean Casiracan",
+    "subject": "Programming",
+    "grade": 95
+  },
+  {
+    "id": 6,
+    "name": "Mark Lee",
+    "subject": "Database Management",
+    "grade": 91
+  }
+]

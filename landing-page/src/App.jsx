@@ -1,51 +1,23 @@
-const App =() => {
-  return(
-<div className="container">
-      <header className="group-2">
-        <h1>Welcome to Our Group 2 Landing Page</h1>
-        <p>
-          This page gives an overview of our group and introduces each member.
-        </p>
-      </header>
-      <section className="about">
-        <h2>About Our Group</h2>
-        <p>
-          We are a group of students who work together, share ideas, and help
-          each other finish our activities successfully.
-        </p>
-      </section>
-      <section className="members">
-        <h2>Group 2 Members</h2>
-        <div className="prfle-container">
-          <div className="prfle">
-            <h3>Sunny Corpin</h3>
-            <h4>Member 1</h4>
-            <p>Responsible for guiding the group and organizing tasks.</p>
-          </div>
-          <div className="prfle">
-            <h3>Sean Casiracan</h3>
-            <h4>Member 2</h4>
-            <p>Collects information and helps prepare the content.</p>
-          </div>
-          <div className="prfle">
-            <h3>Johnloyd Derio</h3>
-            <h4>Mmber 3</h4>
-            <p>Creates the layout and improves the page design.</p>
-          </div>
-          <div className="prfle">
-            <h3>Rodrigo Capongcol</h3>
-            <h4>Member 4</h4>
-            <p>Explains the project and presents the final output.</p>
-          </div>
-        </div>
-      </section>
-    </div>
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/Activity_1/landing_page";
+import GradeCalculator from "./pages/Activity_2/GradeCalculator";
+import StudentGradeViewer from "./pages/Activity_3/StudentGradeViewer";
+import HarryPotterViewer from "./pages/Activity_4/HarryPotterViewer";
+import MCO_LandingPage from "./pages/MCO/MCO_LandingPage";
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MCO_LandingPage />} />
+        <Route path="/activity1" element={<LandingPage />} />
+        <Route path="/activity2" element={<GradeCalculator />} />
+        <Route path="/activity3" element={<StudentGradeViewer />} />
+        <Route path="/activity4" element={<HarryPotterViewer />} />
+        
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
+
 export default App;
-
-
-  
-
-
-

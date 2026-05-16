@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.viewer-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.subtitle {
+  margin-bottom: 25px;
+}
+
+.search-box {
+  width: 280px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  outline: none;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.student-card {
+  width: 260px;
+  padding: 25px;
+  border-radius: 18px;
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  transition: 0.3s ease;
+  animation: fadeIn 0.8s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-10px);
+}
+
+.student-card h2 {
+  margin-bottom: 10px;
+}
+
+.excellent {
+  border: 2px solid #00ff99;
+}
+
+.passed {
+  border: 2px solid #ffd700;
+}
+
+.failed {
+  border: 2px solid #ff4d4d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
